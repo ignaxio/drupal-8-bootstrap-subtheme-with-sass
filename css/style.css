@@ -4078,6 +4078,11 @@ tbody.collapse.in {
     .navbar-inverse .btn-link[disabled]:hover, .navbar-inverse .btn-link[disabled]:focus, fieldset[disabled] .navbar-inverse .btn-link:hover, fieldset[disabled] .navbar-inverse .btn-link:focus {
       color: #444444; }
 
+.navbar.menu-principal {
+  margin-bottom: 0px;
+  border-radius: 0; }
+
+/*@import "../bootstrap/stylesheets/bootstrap/navbar";*/
 .breadcrumb {
   padding: 8px 15px;
   margin-bottom: 20px;
@@ -4332,6 +4337,12 @@ a.badge:hover, a.badge:focus {
       .jumbotron .h1 {
         font-size: 63px; } }
 
+.jumbotron.header-page {
+  margin-bottom: 0px;
+  background-image: url("../images/bg-header-image.jpg");
+  background-size: cover; }
+
+/*@import "../bootstrap/stylesheets/bootstrap/jumbotron";*/
 .thumbnail {
   display: block;
   padding: 4px;
@@ -5829,35 +5840,12 @@ button.close {
   position: absolute;
   bottom: 0;
   width: 100%;
-  /* Set the fixed height of the footer here */
   height: 60px;
-  background-color: #f5f5f5; }
-
-.jumbotron {
-  margin-bottom: 0px;
-  background-image: url("../images/bg-header-image.jpg");
-  padding: 0;
-  margin: 0 auto;
-  background-size: cover;
-  overflow: hidden; }
-  @media (max-width: 991px) {
-    .jumbotron {
-      height: 150px; } }
-  @media (min-width: 992px) and (max-width: 1199px) {
-    .jumbotron {
-      height: 200px; } }
-  @media (min-width: 1200px) {
-    .jumbotron {
-      height: 250px; } }
-
-.navbar-header {
-  width: 100%; }
-
-.navbar {
-  margin-bottom: 0px; }
-  @media (min-width: 768px) {
-    .navbar {
-      border-radius: 0px; } }
+  background-color: #f5f5f5;
+  margin-top: 45px;
+  padding-top: 35px;
+  padding-bottom: 36px;
+  border-top: 1px solid #E5E5E5; }
 
 .region-header .page-header {
   border-bottom: none;
@@ -5888,39 +5876,8 @@ button.close {
 .region-menu-secundario .views-row {
   margin-bottom: 10px; }
 
-ol, ul {
-  padding-left: 1.5em; }
-  .popover ol:last-child, .popover ul:last-child {
-    margin-bottom: 0; }
-
 .page-header {
   margin-top: 0; }
-
-.footer {
-  margin-top: 45px;
-  padding-top: 35px;
-  padding-bottom: 36px;
-  border-top: 1px solid #E5E5E5; }
-
-p:last-child,
-.form-group:last-child,
-.panel:last-child {
-  margin-bottom: 0; }
-
-.region-help > .glyphicon {
-  font-size: 18px;
-  float: left;
-  margin: -0.05em 0.5em 0 0; }
-.region-help .block {
-  overflow: hidden; }
-
-.help-block, .control-group .help-inline {
-  color: #777777;
-  font-size: 12px;
-  margin: 5px 0 10px;
-  padding: 0; }
-  .help-block:first-child, .control-group .help-inline:first-child {
-    margin-top: 0; }
 
 .migas {
   background-color: #eeeeee;
