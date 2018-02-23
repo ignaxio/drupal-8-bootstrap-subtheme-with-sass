@@ -90,22 +90,32 @@
 
 <div class="container">
   <div class="row">
+    <div class="col-xs-12">
+      {{ page.migas }}
+    </div>      
+  </div>
+  <div class="row">
     <div class="col-md-4">
       {{ page.menu_secundario }}
 
     </div>
     <div class="col-md-8">
-      {{ page.content }}
+      <div class="row">
+        <div class="col-xs-12">
+          {{ page.top_bar }}
+        </div>
+        <div class="col-xs-12">
+          {{ page.content }}
+        </div>
+      </div>        
+    </div>
 
-    </div>        
   </div>
 
-</div>
-
-<footer class="footer">
-  <div class="container">
-    {{ page.pie }}
-  </div>
-</footer>
+  <footer class="footer">
+    <div class="container">
+      {{ page.pie }}
+    </div>
+  </footer>
 
 </div> <!-- /container -->

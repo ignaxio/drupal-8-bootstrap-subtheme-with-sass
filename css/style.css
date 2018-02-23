@@ -6413,25 +6413,31 @@ body {
 @media (min-width: 768px) {
   .navbar {
     border-radius: 0px; } }
-.page-header {
+.region-header .page-header {
   border-bottom: none;
   margin: 15px 5px;
-  background: rgba(255, 255, 255, 0.5);
+  background: rgba(255, 255, 255, 0.7);
   border: 2px solid #777777;
-  border-radius: 10px; }
-  .page-header h1 {
+  border-radius: 10px;
+  padding: 10px 20px; }
+  .region-header .page-header p.web-title {
     color: #333333;
-    margin: 10px 15px; }
-    .page-header h1 small {
-      font-size: 22px;
-      display: block;
-      color: #555555; }
-      @media (max-width: 991px) {
-        .page-header h1 small {
-          font-size: 15px; } }
-      @media (min-width: 992px) {
-        .page-header h1 small {
-          font-size: 22px; } }
+    margin-bottom: 0px; }
+    @media (max-width: 991px) {
+      .region-header .page-header p.web-title {
+        font-size: 28px; } }
+    @media (min-width: 992px) {
+      .region-header .page-header p.web-title {
+        font-size: 54px; } }
+  .region-header .page-header p.web-subtitle {
+    display: block;
+    color: #555555; }
+    @media (max-width: 991px) {
+      .region-header .page-header p.web-subtitle {
+        font-size: 15px; } }
+    @media (min-width: 992px) {
+      .region-header .page-header p.web-subtitle {
+        font-size: 22px; } }
 
 .region-menu-secundario .views-row {
   margin-bottom: 10px; }
