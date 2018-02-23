@@ -9,7 +9,6 @@ package: 'Bootstrap'
 regions:
   header: 'Cabecera'
   menu_principal: 'Menu principal'
-  menu_principal_movil: 'Menu principal versión móvil'
   migas: 'Migas de pan'
   top_bar: 'Barra superior'
   menu_secundario: 'Menu secundario'

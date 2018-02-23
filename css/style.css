@@ -6339,40 +6339,6 @@ body.toolbar-loading {
       background: #337ab7;
       color: white; }
 
-ol, ul {
-  padding-left: 1.5em; }
-  .popover ol:last-child, .popover ul:last-child {
-    margin-bottom: 0; }
-
-.page-header {
-  margin-top: 0; }
-
-.footer {
-  margin-top: 45px;
-  padding-top: 35px;
-  padding-bottom: 36px;
-  border-top: 1px solid #E5E5E5; }
-
-p:last-child,
-.form-group:last-child,
-.panel:last-child {
-  margin-bottom: 0; }
-
-.region-help > .glyphicon {
-  font-size: 18px;
-  float: left;
-  margin: -0.05em 0.5em 0 0; }
-.region-help .block {
-  overflow: hidden; }
-
-.help-block, .control-group .help-inline {
-  color: #777777;
-  font-size: 12px;
-  margin: 5px 0 10px;
-  padding: 0; }
-  .help-block:first-child, .control-group .help-inline:first-child {
-    margin-top: 0; }
-
 html {
   position: relative;
   min-height: 100%; }
@@ -6410,9 +6376,12 @@ body {
 .navbar-header {
   width: 100%; }
 
-@media (min-width: 768px) {
-  .navbar {
-    border-radius: 0px; } }
+.navbar {
+  margin-bottom: 0px; }
+  @media (min-width: 768px) {
+    .navbar {
+      border-radius: 0px; } }
+
 .region-header .page-header {
   border-bottom: none;
   margin: 15px 5px;
@@ -6441,3 +6410,46 @@ body {
 
 .region-menu-secundario .views-row {
   margin-bottom: 10px; }
+
+ol, ul {
+  padding-left: 1.5em; }
+  .popover ol:last-child, .popover ul:last-child {
+    margin-bottom: 0; }
+
+.page-header {
+  margin-top: 0; }
+
+.footer {
+  margin-top: 45px;
+  padding-top: 35px;
+  padding-bottom: 36px;
+  border-top: 1px solid #E5E5E5; }
+
+p:last-child,
+.form-group:last-child,
+.panel:last-child {
+  margin-bottom: 0; }
+
+.region-help > .glyphicon {
+  font-size: 18px;
+  float: left;
+  margin: -0.05em 0.5em 0 0; }
+.region-help .block {
+  overflow: hidden; }
+
+.help-block, .control-group .help-inline {
+  color: #777777;
+  font-size: 12px;
+  margin: 5px 0 10px;
+  padding: 0; }
+  .help-block:first-child, .control-group .help-inline:first-child {
+    margin-top: 0; }
+
+.migas {
+  background-color: #eeeeee;
+  margin-bottom: 25px; }
+
+.breadcrumb {
+  background: none;
+  border-radius: 0px;
+  margin-bottom: auto; }
