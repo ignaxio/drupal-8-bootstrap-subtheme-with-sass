@@ -31,3 +31,4 @@ regions:
 libraries:
   - 'zero/global-styling'
   - 'zero/bootstrap-scripts'
+  - 'zero/custom-scripts'

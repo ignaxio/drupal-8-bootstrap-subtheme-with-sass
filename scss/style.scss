@@ -8,7 +8,8 @@
 $icon-font-path: '../bootstrap/fonts/bootstrap/';
 
 // Core variables and mixins
-@import "../bootstrap/stylesheets/bootstrap/variables";
+/*@import "../bootstrap/stylesheets/bootstrap/variables";*/
+@import "overrides/variables";
 @import "../bootstrap/stylesheets/bootstrap/mixins";
 
 // Reset and dependencies

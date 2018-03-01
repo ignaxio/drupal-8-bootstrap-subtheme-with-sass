@@ -17,3 +17,9 @@ bootstrap-scripts:
     bootstrap/javascripts/bootstrap/scrollspy.js: {}
     bootstrap/javascripts/bootstrap/tab.js: {}
     bootstrap/javascripts/bootstrap/transition.js: {}
+
+custom-scripts:
+  js:
+    js/custom.js: {}
+  dependencies:
+    - core/jquery

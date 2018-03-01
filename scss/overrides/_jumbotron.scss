@@ -3,8 +3,8 @@
 */ 
 
 .jumbotron {
-  padding-top:    $jumbotron-padding;
-  padding-bottom: $jumbotron-padding;
+  padding-top: 200px;
+  /*padding-bottom: $jumbotron-padding;*/
   margin-bottom: $jumbotron-padding;
   color: $jumbotron-color;
   background-color: $jumbotron-bg;
@@ -36,8 +36,8 @@
   }
 
   @media screen and (min-width: $screen-sm-min) {
-    padding-top:    ($jumbotron-padding * 1.6);
-    padding-bottom: ($jumbotron-padding * 1.6);
+    /*padding-top:    ($jumbotron-padding * 1.6);*/
+    /*padding-bottom: ($jumbotron-padding * 1.6);*/
 
     .container &,
     .container-fluid & {
@@ -54,6 +54,7 @@
 
 
 .jumbotron.header-page {
+  border-bottom: 1px solid $azul;
   margin-bottom: 0px;
   background-image:url('../images/bg-header-image.jpg');
   background-size: cover;
