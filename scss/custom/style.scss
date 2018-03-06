@@ -1,4 +1,12 @@
 
+.degradado {
+  background: -webkit-linear-gradient(top, rgba(0, 0, 0, 0) 0, rgba(0, 0, 0, 0.8) 100%);
+  background: -moz-linear-gradient(top, rgba(0, 0, 0, 0) 0, rgba(0, 0, 0, 0.8) 100%);
+  background: -ms-linear-gradient(top, rgba(0, 0, 0, 0) 0, rgba(0, 0, 0, 0.8) 100%);
+  background: -o-linear-gradient(top, rgba(0, 0, 0, 0) 0, rgba(0, 0, 0, 0.8) 100%);
+  background: linear-gradient(top, rgba(0, 0, 0, 0) 0, rgba(0, 0, 0, 0.8) 100%);
+}
+
 .footer {
   position: absolute;
   bottom: 0;
@@ -13,11 +21,11 @@
 
 .region-header .page-header {
   border-bottom: none;
-  margin: 15px 5px;
-/*  background:rgba(255,255,255,0.7);
-  border: 2px solid $gray-light;
-  border-radius: 10px;*/
-  padding: 10px 20px;
+  /*  margin: 15px 5px;*/
+  /*  background:rgba(255,255,255,0.7);
+    border: 2px solid $gray-light;
+    border-radius: 10px;*/
+  padding: 10px 15px;
   p.web-title {
     color: $blanco-roto; 
     margin-bottom: 0px;
@@ -55,9 +63,23 @@
   margin-bottom: auto;
 }
 .contenedor-titulo {
-  background: -webkit-linear-gradient(top, rgba(0, 0, 0, 0) 0, rgba(0, 0, 0, 0.8) 100%);
-  background: -moz-linear-gradient(top, rgba(0, 0, 0, 0) 0, rgba(0, 0, 0, 0.8) 100%);
-  background: -ms-linear-gradient(top, rgba(0, 0, 0, 0) 0, rgba(0, 0, 0, 0.8) 100%);
-  background: -o-linear-gradient(top, rgba(0, 0, 0, 0) 0, rgba(0, 0, 0, 0.8) 100%);
-  background: linear-gradient(top, rgba(0, 0, 0, 0) 0, rgba(0, 0, 0, 0.8) 100%);
+  padding-top: 150px;
+  @extend .degradado;
+}
+
+.contenedor-categoria {
+  border: 1px solid rgba(0,0,0,.125);
+  border-radius: .25rem;
+  .descripcion-catergoria {
+    margin: 20px 15px;
+  }
+  .contenedor-foto-categoria {
+    background-size: cover;
+    background-position: center;
+    .foto-categoria {
+      color: $blanco-roto; 
+      padding: 150px 15px 5px;
+      @extend .degradado;
+    }
+  }
 }

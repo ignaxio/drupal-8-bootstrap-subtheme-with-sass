@@ -1,0 +1,66 @@
+{#
+/**
+ * @file
+ * Default theme implementation to display a taxonomy term.
+ *
+ * Available variables:
+ * - url: URL of the current term.
+ * - name: Name of the current term.
+ * - content: Items for the content of the term (fields and description).
+ *   Use 'content' to print them all, or print a subset such as
+ *   'content.description'. Use the following code to exclude the
+ *   printing of a given child element:
+ *   @code
+ *   {{ content|without('description') }}
+ *   @endcode
+ * - attributes: HTML attributes for the wrapper.
+ * - page: Flag for the full page state.
+ * - term: The taxonomy term entity, including:
+ *   - id: The ID of the taxonomy term.
+ *   - bundle: Machine name of the current vocabulary.
+ * - view_mode: View mode, e.g. 'full', 'teaser', etc.
+ *
+ * @see template_preprocess_taxonomy_term()
+ *
+ * @ingroup themeable
+ */
+#}
+{#{ dump(content) }#}
+
+
+{#% for item in content.field_imagen_categoria['#items'] %}
+ {{ dump(file_url(item.entity.uri.value)) }},
+{% endfor %}
+
+{{ dump(file_url(content.field_imagen_categoria['#items'].entity.uri.value)) }}
+{{ dump(content.field_imagen_categoria['#items']) }#}
+{#{ dump(content) }}
+{{ dump(content.description) }#}
+
+
+
+{#% set imagen = content.field_imagen_categoria['#items'] %}
+{{ dump(imagen) }}
+{{ dump(imagen.getConstraints()) }}
+{{ dump(imagen.getValue('list')) }#}
+{#{ kint(content.field_imagen_categoria['#items'])}#}
+
+{% set imagenURL = file_url(content.field_imagen_categoria['#items'].entity.uri.value) %}
+{% set titulo = content.description['#object'].getName() %}
+{% set descripcion = content.description['#object'].getDescription() %}
+<div class="contenedor-categoria"> 
+  <div class="contenedor-foto-categoria" style="background-image: url('{{ imagenURL }}');">
+    <div class="foto-categoria">
+      <h2>{{ titulo }}</h2>
+    </div>
+  </div>
+  <div class="descripcion-catergoria">{{ descripcion | raw }}</div>
+</div>
+
+
+
+
+{#<div class="contenedor-categoria">  
+  {{ content.field_imagen_categoria }}
+  {{ content.description }}
+</div>#}
